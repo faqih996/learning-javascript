@@ -43,16 +43,16 @@ namaMantan.pop();
 
 //console.log(namaMantan);
 
-for (let index = 0; index < namaMantan.length; index++) {
-  const element = namaMantan[index];
-  console.log(element);
-}
+//for (let index = 0; index < namaMantan.length; index++) {
+//  const element = namaMantan[index];
+//  console.log(element);
+//}
 
 //belajar object
-//console.log(
-//namaMantan.reduce(function (acc, mantan, ke) {
-//acc[mantan] = `mantan ke ${ke + 1}`;
+console.log(
+  namaMantan.reduce(function (acc, mantan, ke) {
+    acc[mantan] = `mantan ke ${ke + 1}`;
 
-//return acc;
-//}, {})
-//);
+    return acc;
+  }, {})
+);

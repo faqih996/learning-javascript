@@ -28,14 +28,13 @@ namaMantan.pop(); //console.log("nama mantan: ", namaMantan);
 //console.log(indexKiki);
 //namaMantan.splice(indexKiki, 1);
 //console.log(namaMantan);
+//for (let index = 0; index < namaMantan.length; index++) {
+//  const element = namaMantan[index];
+//  console.log(element);
+//}
+//belajar object
 
-for (var index = 0; index < namaMantan.length; index++) {
-  var element = namaMantan[index];
-  console.log(element);
-} //belajar object
-//console.log(
-//namaMantan.reduce(function (acc, mantan, ke) {
-//acc[mantan] = `mantan ke ${ke + 1}`;
-//return acc;
-//}, {})
-//);
+console.log(namaMantan.reduce(function (acc, mantan, ke) {
+  acc[mantan] = "mantan ke ".concat(ke + 1);
+  return acc;
+}, {}));
