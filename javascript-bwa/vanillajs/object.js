@@ -31,5 +31,5 @@ const countries = {
 //ini kalo print isinya dari ID contoh : city
 console.log(countries.ID.city);
 
-//ini buat memberi pesan kalo ada yang tidak ada
+//ini buat memberi pesan not found jika ada yang tidak ada
 console.log(countries?.TH?.province ?? "NOT FOUND");
