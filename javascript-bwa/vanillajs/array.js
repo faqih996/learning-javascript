@@ -1,27 +1,23 @@
-
 const namaMantan = ["kiki", "ayu", "ezra"];
-
 
 //pakai [0/1/2] untuk melihat salah satu. sama dengan id di php
 //atau menggunakan (namaMantan.lenght) untuk melihat jumlah mantan
 //console.log(namaMantan);
 
-
-namaMantan.forEach(function(item, index, array){
-    console.log(item, index, array);
+namaMantan.forEach(function (item, index, array) {
+  console.log(item, index, array);
 });
 
-namaMantan.push('harutya');
+namaMantan.push("harutya");
 
-
-//duplikat array 
+//duplikat array
 const namaMantanLama = namaMantan.slice();
 
 namaMantan.pop();
 
-console.log("nama mantan: ", namaMantan);
+//console.log("nama mantan: ", namaMantan);
 
-console.log("Nama Mantan Lama:", namaMantanLama);
+//console.log("Nama Mantan Lama:", namaMantanLama);
 
 //HAPUS DATA TERAKHIR
 //namaMantan.pop();
@@ -40,7 +36,6 @@ console.log("Nama Mantan Lama:", namaMantanLama);
 //mencari dia ini mantan keberapa
 //console.log(namaMantan.indexOf("ezra") + 1);
 
-
 //menghapus nama tertentu
 //const indexKiki = namaMantan.indexOf("kiki");
 //console.log(indexKiki);
@@ -48,5 +43,16 @@ console.log("Nama Mantan Lama:", namaMantanLama);
 
 //console.log(namaMantan);
 
+for (let index = 0; index < namaMantan.length; index++) {
+  const element = namaMantan[index];
+  console.log(element);
+}
 
+//belajar object
+//console.log(
+//namaMantan.reduce(function (acc, mantan, ke) {
+//acc[mantan] = `mantan ke ${ke + 1}`;
 
+//return acc;
+//}, {})
+//);

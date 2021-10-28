@@ -7,12 +7,12 @@ var namaMantan = ["kiki", "ayu", "ezra"]; //pakai [0/1/2] untuk melihat salah sa
 namaMantan.forEach(function (item, index, array) {
   console.log(item, index, array);
 });
-namaMantan.push('harutya'); //duplikat array 
+namaMantan.push("harutya"); //duplikat array
 
 var namaMantanLama = namaMantan.slice();
-namaMantan.pop();
-console.log("nama mantan: ", namaMantan);
-console.log("Nama Mantan Lama:", namaMantanLama); //HAPUS DATA TERAKHIR
+namaMantan.pop(); //console.log("nama mantan: ", namaMantan);
+//console.log("Nama Mantan Lama:", namaMantanLama);
+//HAPUS DATA TERAKHIR
 //namaMantan.pop();
 //console.log(namaMantan);
 //HAPUS DATA PERTAMA
@@ -28,3 +28,14 @@ console.log("Nama Mantan Lama:", namaMantanLama); //HAPUS DATA TERAKHIR
 //console.log(indexKiki);
 //namaMantan.splice(indexKiki, 1);
 //console.log(namaMantan);
+
+for (var index = 0; index < namaMantan.length; index++) {
+  var element = namaMantan[index];
+  console.log(element);
+} //belajar object
+//console.log(
+//namaMantan.reduce(function (acc, mantan, ke) {
+//acc[mantan] = `mantan ke ${ke + 1}`;
+//return acc;
+//}, {})
+//);
