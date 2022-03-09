@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe Data Angka</title>
+  </head>
+  <br>
+    number in Javascript are double-precision floating point 64-bit format IEEE
+    754 Values maksudnya tidak ada integer hanya ada floating-point dengan angka
+    64bit atau 2pangkat64bit. tapi tidak bisa dipakai semua, namun ada penanda
+    untuk menampung angka" tertentu.
+    <br />
+    <h3>Angka tanpa desimal</h3>
+    </br>
+     : 10,1500,123456 <br>
+    jika angka yang diinput lebih dari 15 digit maka akan di bulatkan.
+    <br>
+    <h3>Angka desimal</h3>
+    <br>
+    bilangan dengan koma namun diganti dengan menggunakan titik misal 3.14, 20.00
+    maksimal 17 digit dibelakang koma 
+    <br>
+    tidak selalu akurat dalam penjumlahan lihat di 2.0 + 1.0
+
+    <br>
+    jangan pernah mengawali angka di awal javascript dengan 0 akan dianggap bilangan oktav
+    <br>
+    jika diawali dengan 0x maka akan dianggap hexadesimal atau basis 16n
+    misal 0xFF
+    <br>
+
+    <h3>Angka Spesial</h3>
+    <br>
+    infinity
+    -infinity
+    NaN (Not a Number)
+    
+    <script>
+      //angka tanpa desimal
+      x = 10;
+      y = 5;
+      a = 2000;
+      b = 999999999999999; //angka sampai 15
+      c = 9999999999999999; //angka sampai 15
+      console.log(x);
+      console.log(y);
+      console.log(a);
+      console.log("angka maksimal sampai 15 =", b);
+      console.log("angka lebih dari 15 digit=", c);
+      console.log('hasil x + y  ', x + y);
+
+      // angka dengan desimal
+      ab = 10.4;
+      ac = 200.00;
+      ba = 123.12344567;
+      console.log(ab);
+      console.log(ac);
+      console.log(ba);
+      console.log(0.3+0.7);
+      console.log(0.2+0.1); 
+
+      // jika diawali dengan 0 maka dianggap bilangan oktav
+      console.log(022);
+      //jika diawali dengan 0x maka akan dianggap hexadesimal atau basis 16n
+      console.log(0xFF);
+
+      //Spesial Number
+      console.log(2/0); //infinity
+      console.log(-2/0); //-infinity
+      console.log(0/0); //NaN
+      console.log(0/ "Apel"); //NaN
+      console.log(100/ "10"); //Jika isinya angka akan tetap dihitung
+    </script>
+</body>
+</html>

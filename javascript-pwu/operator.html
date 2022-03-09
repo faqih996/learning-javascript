@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator</title>
+  </head>
+  <body>
+    "Operator dalam javascript adalah sebuah simbol yang digunakan untuk
+    melakukan operasi"
+
+    <h3>Jenis Operator</h3>
+    <h4>Operator Binary</h4>
+    <details>
+      Operator yang membutuhkan 2 operand <br />
+      (Operand1) operator (Operand2)
+    </details>
+    <h5>Aritmatika</h5>
+    <details>
+      + , -, *, /, %, <br />
+      Menggunakan operator precedence / urutan operasi matematika = KuKaBaTaKu =
+      () * / + -
+    </details>
+    <h5>Penugasan/Assigtment</h5>
+    <details>
+      =, +=, -=, *=, /=, %=
+      <br />
+      jika menggunakan salah 1 operator maka nilai sebelumnya yang tersimpan
+      tidak akan dihilangkan, tapi akan dilakukan operasi lebih dahulu
+      <br />
+      +=, sama dengan x += y yang berarti x = x+y, <br />
+      -=, *=, /=, %=, sama dengan diatas
+    </details>
+    <h5>Perbandingan/Comparison</h5>
+    ,
+    <details>
+      ==, !=, ===, !==, >, <, >=, <= <br />
+      akan menghasilkan nilai boolean true atau false
+    </details>
+
+    <h5>Logika/Logical</h5>
+    <details>
+      &&(And), ||(OR), !(Not) <br />
+      Jika And Keduanya Harus Benar <br />
+      true x true = true,<br />
+      Or True x False = true <br />
+    </details>
+    <h5>String</h5>
+    <details>menggunakan + sebagai penghubung 2 nilai</details>
+
+    <h4>Operator Ternary</h4>
+    <details>Operator yang membutuhkan 3 operand</details>
+    <h5>Kondisional</h5>
+    <details>
+      pengecekan suatu kondisi dan menentukan nilai yang dihasilkan ketika
+      kondisinya true atau false<br />
+      (kondisi) ? benar : salah
+    </details>
+
+    <h4>Operator Unary</h4>
+    <details>
+      Hanya membutuhkan 1 operand Operator operand atau operand Operator
+    </details>
+    <h5>Typeof</h5>
+    <details>
+      untuk mengutahui type data apa
+      <br />
+      typeof (operand)
+    </details>
+
+    <script>
+      //aritmatika
+      console.log(5 + 10);
+      console.log(10 / 5);
+      console.log(10 % 5);
+      console.log(10 % 3);
+      console.log(1 + 2 * 3 - 4);
+      console.log("1" + 2 * 3 - 4); //jika dikasih tanda () maka akan didahulukan
+      console.log((x = 1000));
+
+      //penugasam
+      x = 5;
+      console.log(x + 30);
+      console.log((x += 25));
+      console.log((x -= 40));
+      console.log((x *= 25));
+      console.log((x /= 25));
+      console.log((x %= 35));
+
+      //perbandingan
+      console.log(x != 10);
+      console.log(x == 25);
+      console.log(x === 25);
+      console.log(x !== 25);
+      console.log(x >= 25);
+      console.log(x <= 35);
+      console.log(x < 35);
+      console.log(x > 2);
+
+      //Logical
+      y = 8;
+      console.log(y % 2 == 0);
+      console.log(y % 2 == 0) && y < 15;
+      console.log(y % 10 == 0) || y < 15;
+
+      //string
+      console.log(10 + 10 + "10");
+      console.log("10" + 10 + 10);
+
+      //typeof
+      console.log(typeof 10);
+      console.log(typeof "10");
+      console.log(typeof true);
+
+      //kondisional
+      console.log(x % 3 == 0 ? "genap" : "ganjil");
+    </script>
+  </body>
+</html>
